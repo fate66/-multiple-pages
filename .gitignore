@@ -1,0 +1,6 @@
+package-lock.json
+node_modules
+entry/*
+dist
+config/devConfig.js
+.idea
