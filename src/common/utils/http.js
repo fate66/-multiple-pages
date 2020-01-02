@@ -4,8 +4,7 @@ import axiosUtils from 'axios/lib/utils'
 // import Login from '@vdian/login'
 // import ua from 'src/common/utils/ua'
 // import {ssoDomain} from 'src/api/domain'
-import Toast from 'src/common/components/wxToast'
-import fxLogin from 'src/common/utils/login'
+import {login} from '@fxx2019/fx-constant'
 import Vue from 'vue'
 
 function setContentTypeIfUnset(headers, value) {
@@ -64,7 +63,7 @@ export default {
   },
   // 错误日志
   _errorLog(error) {
-    Toast({
+    Vue.prototype.toast({
       content: error
     })
     console.log(error)
@@ -102,9 +101,9 @@ export default {
         //   window.location.href = Login.login({environment: ENVIRON_TYPE})
         // }
       } else if (parseInt(res.data.status.status_code) === 40500) {
-        fxLogin.doLogin()
+        login.doLogin()
       } else {
-        Toast({
+        Vue.prototype.toast({
           content: res.data.status.status_reason || res.data.status.description
         })
       }

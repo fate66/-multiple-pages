@@ -71,6 +71,7 @@
     "weixin-js-sdk": "^1.2.0"
   },
   "dependencies": {
+    "@fxx2019/fx-constant": "^1.0.3",
     "@fxx2019/wxui": "^1.0.29",
     "axios": "^0.18.0",
     "chokidar": "^3.0.1",

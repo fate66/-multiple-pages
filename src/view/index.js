@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import 'src/view/base.js'
-import Login from 'src/common/utils/login'
+import {login} from '@fxx2019/fx-constant'
 
 /* eslint-disable no-undef */
-if (Login.isLogin()) {
+if (login.isLogin()) {
   /* eslint-disable no-new */
   new Vue({
     el: '#app',
@@ -14,5 +14,5 @@ if (Login.isLogin()) {
     render: h => h(component)
   })
 } else {
-  Login.doLogin()
+  login.doLogin()
 }
