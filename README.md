@@ -30,15 +30,11 @@
 
  本地开发多页面引用与单页面一样，项目会将将多页面的访问地址输出到终端，直接访问即可，
  
-
  ![image](https://github.com/fate66/multiple-pages/raw/master/repositories/dev-img.png)
-
+                                              
 
  具体开发方式可以查看demo
-
-
  例子：
-
 
  ![image](https://github.com/fate66/multiple-pages/raw/master/repositories/member-page.png)
 
