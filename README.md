@@ -1,4 +1,4 @@
-# slb-h5
+# multiple-pages
 
 项目介绍：
    这是一个多页面H5项目模板，需要配合fx-cli使用，使用的技术 vue + webpack
