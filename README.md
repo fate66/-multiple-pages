@@ -1,7 +1,7 @@
 # slb-h5
 
 项目介绍：
-   这是一个多页面H5项目，使用的技术 vue + webpack
+   这是一个多页面H5项目模板，需要配合fx-cli使用，使用的技术 vue + webpack
 
    项目搭建以及性能优化上与vue-cli相似：
 
@@ -21,20 +21,19 @@
    的形式注入
 
    8:sass-resources-loader这个loader在引入全局变量时，注意只注入函数和变量。
-   图片压缩插件暂时未引用
+   
+   9：引入图片压缩loader
 
- 本项目以微店的技术架构搭建的，一共四套环境，可以去package.json中查看。引用了微店开源ui组件库（wdui）
- 具体用法可以上GitHub上找
+ 本项目一共四套环境，可以去package.json中查看。
 
  项目中引入了postcss-pxtorem，所以开发时单位直接写px就可以，打包时这个loader会将px直接转成rem
 
- 本地开发多页面引用与单页面一样，我会将多页面的访问地址输出到终端，直接访问即可，
+ 本地开发多页面引用与单页面一样，项目会将将多页面的访问地址输出到终端，直接访问即可，
 
  ![image](https://github.com/fate66/multiple-pages/raw/master/repositories/dev-img.png)
 
 
- 新建页面的方式就是在view下面新建一个文件夹，文件夹的名字就是页面文件名。具体可以会员页（member）
- 会员页：项目起来后，直接访问 http://me.weidian.com:8080/member.html 即可看到。
+具体开发方式可以查看demo
 
 
  我写的一个页面：
