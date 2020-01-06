@@ -29,11 +29,12 @@
  项目中引入了postcss-pxtorem，所以开发时单位直接写px就可以，打包时这个loader会将px直接转成rem
 
  本地开发多页面引用与单页面一样，项目会将将多页面的访问地址输出到终端，直接访问即可，
+ 
 
  ![image](https://github.com/fate66/multiple-pages/raw/master/repositories/dev-img.png)
 
 
-具体开发方式可以查看demo
+ 具体开发方式可以查看demo
 
 
  我写的一个页面：
