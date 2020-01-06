@@ -36,7 +36,7 @@
  具体开发方式可以查看demo
  例子：
 
- ![image](https://github.com/fate66/multiple-pages/raw/master/repositories/member-page.png)
+ ![image](./repositories/member-page.png)
 
 
 
