@@ -59,11 +59,19 @@ export default {
     // } else {
     //   ext = {showLogin: 2}
     // }
+    const oauth = Vue.$utils.urlQuery('oauth')
+    if (oauth == 4 || oauth == 5 || oauth == 6) {
+      if (!(Vue.$utils.cookie.get('unionid') && Vue.$utils.cookie.get('openid'))) {
+        const uid = Vue.$utils.cookie.get('uid')
+        Vue.$utils.cookie.set('unionid', uid, 2592000000, '.fangxin.com')
+        Vue.$utils.cookie.set('openid', uid, 2592000000, '.fangxin.com')
+      }
+    }
     return options
   },
   // 错误日志
   _errorLog(error) {
-    Vue.prototype.toast({
+    Vue.$toast({
       content: error
     })
     console.log(error)
@@ -103,7 +111,7 @@ export default {
       } else if (parseInt(res.data.status.status_code) === 40500) {
         login.doLogin()
       } else {
-        Vue.prototype.toast({
+        Vue.prototype.$toast({
           content: res.data.status.status_reason || res.data.status.description
         })
       }
