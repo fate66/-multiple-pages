@@ -97,11 +97,12 @@ let base = {
               name: `${utils.projectName()}/img/[name].[hash:7].[ext]`,
               limit: 10000
             }
-          },
-          {
-            loader: 'image-webpack-loader',
-            options: {}
-          }]
+          }
+          // {
+          //   loader: 'image-webpack-loader',
+          //   options: {}
+          // }
+        ]
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
