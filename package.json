@@ -12,7 +12,9 @@
     "daily": "node build/build.js -- daily",
     "prod": "npm run build",
     "analyz": "node build/build.js -- analyz",
-    "rm": "rm -rf node_modules/ && rm package-lock.json"
+    "rm": "rm -rf node_modules/ && rm package-lock.json",
+    "debugpre": "node build/debug.js -- pre",
+    "debug": "node build/debug.js"
   },
   "repository": {
     "type": "git"
